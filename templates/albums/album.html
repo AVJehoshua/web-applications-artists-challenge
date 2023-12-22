@@ -1,0 +1,35 @@
+<!--- Example for GET /albums---->
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+            <title>List of Absurd Albums</title>
+    </head>
+    <style type="text/css">
+        body {
+            background-color: rgb(186, 186, 186);
+            color: rgb(2, 121, 213);
+            font-size: 1.5em;
+        }
+        </style>
+    <body>
+        <h1>Absurd Albums</h1>
+
+        <ul>
+        {% for album in albums %}
+            <li>
+            <h2>
+                <a href="/albums/{{album.id}}">{{album.title}}</a>
+            </h2>
+            </li>
+        {% endfor %}
+        </ul>
+    </body>
+</html>
+
+
+
+
+
+
+
+ 

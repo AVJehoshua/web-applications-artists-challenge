@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Absurd Artists</title>
+    </head>
+    <style type="text/css">
+        body {
+            background-color: rgb(186, 186, 186);
+            color: rgb(2, 121, 213);
+            font-size: 1.5em;
+        }
+        </style>
+    <body>
+    <h1>
+        Absurd Artists
+    </h1>
+
+        <ul>
+        {% for artist in artists %}
+            <li>
+            <h2>
+                <a href="/artists/{{artist.id}}">{{artist.name}}</a>
+            </h2>
+            </li>
+        {% endfor %}
+        </ul>
+    </body>
+</html>
+
+
+
+
+
+
+
+
+</html>
